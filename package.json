@@ -1,7 +1,9 @@
 {
   "name": "vite-template-react",
   "version": "1.2.0",
+  "homepage": "https://kluevo.github.io/cs394-FitNU",
   "scripts": {
+    "predeploy": "npm run build",
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
@@ -31,6 +33,7 @@
     "@vitest/coverage-v8": "^1.0.4",
     "@vitest/ui": "^1.0.4",
     "c8": "^8.0.1",
+    "gh-pages": "^6.1.1",
     "jsdom": "^23.0.1",
     "vite": "^5.0.12",
     "vitest": "^1.0.4"
