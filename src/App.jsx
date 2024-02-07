@@ -27,7 +27,9 @@ const App = () => {
   return (
     <div className="app">
       {user ?
-        <BrowserRouter>
+        <BrowserRouter
+          basename={import.meta.env.DEV ? '/' : '/cs394-FitNU/'}
+        >
           {firstTimeUser ?
             <CreateProfile user={user} firstTimeUserCallBack={setFirstTimeUser} /> :
             <>
